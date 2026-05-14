@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srivasuda Group | Premium Land Investments</title>
+    <meta name="description" content="Srivasuda Group makes premium land investments accessible.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h2>SRIVASUDA <span style="font-weight: 300; color: var(--text-dark);">GROUP</span></h2>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="#divisions" class="nav-link">Our Divisions</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#why-us" class="nav-link">Why Us</a>
+            <a href="#careers" class="nav-link">Careers</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero bg-dark">
+        <!-- Geometric Animated Shapes -->
+        <div class="geometric-bg">
+            <div class="shape-wrapper" style="left: -5%; top: 20%; transform: rotate(12deg);">
+                <div class="elegant-shape shape-1"></div>
+            </div>
+            <div class="shape-wrapper" style="right: 0%; top: 75%; transform: rotate(-15deg);">
+                <div class="elegant-shape shape-2"></div>
+            </div>
+            <div class="shape-wrapper" style="left: 10%; bottom: 10%; transform: rotate(-8deg);">
+                <div class="elegant-shape shape-3"></div>
+            </div>
+            <div class="shape-wrapper" style="right: 20%; top: 15%; transform: rotate(20deg);">
+                <div class="elegant-shape shape-4"></div>
+            </div>
+            <div class="shape-wrapper" style="left: 25%; top: 10%; transform: rotate(-25deg);">
+                <div class="elegant-shape shape-5"></div>
+            </div>
+        </div>
+
+        <div class="hero-content fade-in">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Premium Development</span>
+            </div>
+            <h1 class="gradient-text">Elevate Your Realestate Vision</h1>
+            <p style="color: rgba(255,255,255,0.7); max-width: 600px;">Crafting exceptional digital experiences through innovative design and cutting-edge land investments.</p>
+            <div class="hero-actions mt-4">
+                <a href="#projects" class="hero-btn">Discover Assets</a>
+                <a href="about.html" class="hero-btn-outline dark-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image depth-card fade-in" style="animation-delay: 0.2s;">
+            <!-- Using relative path for assets -->
+            <img src="assets/hero_bg_premium_1777981596046.png" alt="Premium Land">
+        </div>
+    </section>
+
+    <!-- About Section Overview -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image depth-card fade-in">
+                    <img src="assets/shad_nagar_zone_1777981898455.png" alt="About Srivasuda">
+                </div>
+                <div class="about-text fade-in" style="animation-delay: 0.2s;">
+                    <h2>A single piece of land.<br>There are several dreams.</h2>
+                    <p class="mb-4">Indian households from the poor and middle classes are not always able to invest in land. Srivasuda Realestate makes 'small land investments' accessible to the average Indian.</p>
+                    <a href="about.html" class="contact-btn">Read Our Full Story &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Divisions Section -->
+    <section id="divisions" class="divisions-section py-long">
+        <div class="container">
+            <h2 class="text-center fade-in gradient-text-light">Our Divisions</h2>
+            <p class="text-center subtitle fade-in" style="color: rgba(255,255,255,0.7);">Multiple professional divisions under one trusted organization.</p>
+            
+            <div class="divisions-grid fade-in" style="animation-delay: 0.2s;">
+                <div class="division-card depth-card" id="nri-division">
+                    <div class="division-icon">✈️</div>
+                    <h3>NRI Services Division</h3>
+                    <div class="click-indicator">Click to view services</div>
+                </div>
+                <div class="division-card depth-card" id="property-division">
+                    <div class="division-icon">🏢</div>
+                    <h3>Property Division</h3>
+                    <div class="click-indicator">Click to view projects</div>
+                </div>
+                <div class="division-card depth-card">
+                    <div class="division-icon">💳</div>
+                    <h3>Membership Division</h3>
+                </div>
+                <div class="division-card depth-card" onclick="window.location.href='svs-brundhavanam-bliss.html'">
+                    <div class="division-icon">🏖️</div>
+                    <h3>Club & Resorts Division</h3>
+                    <div class="click-indicator">Explore Brundhavanam Bliss</div>
+                </div>
+                <div class="division-card depth-card">
+                    <div class="division-icon">🎓</div>
+                    <h3>Education Division</h3>
+                </div>
+                <div class="division-card depth-card">
+                    <div class="division-icon">🤖</div>
+                    <h3>SVC AI Tech Solution Division</h3>
+                </div>
+            </div>
+
+            <!-- NRI Services Expandable Panel -->
+            <div class="nri-services-panel" id="nri-panel">
+                <div class="panel-header">
+                    <h3>NRI Services Categories</h3>
+                    <button class="close-panel" aria-label="Close panel">&times;</button>
+                </div>
+                <div class="nri-services-grid">
+                    <div class="nri-service-box">Property Services</div>
+                    <div class="nri-service-box">Sales & Purchase</div>
+                    <div class="nri-service-box">GHMC/Govt Services</div>
+                    <div class="nri-service-box">Cab Services</div>
+                    <div class="nri-service-box">Medical Services</div>
+                    <div class="nri-service-box">Personal Services</div>
+                    <div class="nri-service-box">Tracking Services</div>
+                    <div class="nri-service-box">Other Services</div>
+                </div>
+            </div>
+
+            <!-- Property Division Expandable Panel -->
+            <div class="nri-services-panel" id="property-panel">
+                <div class="panel-header">
+                    <h3>Ongoing Projects</h3>
+                    <button class="close-panel property-close" aria-label="Close panel">&times;</button>
+                </div>
+                
+                <div class="property-projects-grid">
+                    <!-- Project 1 -->
+                    <div class="property-project-card depth-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/shad_nagar_zone_1777981898455.png" alt="Shad Nagar">
+                            <div class="project-card-overlay">
+                                <h4>Shad Nagar Zone</h4>
+                                <span>South Hyderabad</span>
+                            </div>
+                        </div>
+                        <div class="project-card-details">
+                            <p class="project-desc">Fast growing investment zone near developing infrastructure. Suitable for long-term land investment with premium open plots and gated layouts.</p>
+                            <ul class="project-features">
+                                <li>✔️ Open Plots</li>
+                                <li>✔️ HMDA / DTCP Approved</li>
+                                <li>✔️ Clear Documentation</li>
+                            </ul>
+                            <a href="#projects" class="hero-btn mt-4" style="width: 100%; text-align: center; padding: 10px;">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="property-project-card depth-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/premium_villas_1777983706041.png" alt="Sadashivpet Zone">
+                            <div class="project-card-overlay">
+                                <h4>Sadashivpet Zone</h4>
+                                <span>West Hyderabad</span>
+                            </div>
+                        </div>
+                        <div class="project-card-details">
+                            <p class="project-desc">Expanding real-estate corridor with high future appreciation potential. Focused on secure residential and investment-focused plotted developments.</p>
+                            <ul class="project-features">
+                                <li>✔️ Gated Community</li>
+                                <li>✔️ High Future Appreciation</li>
+                                <li>✔️ Secure Developments</li>
+                            </ul>
+                            <a href="#projects" class="hero-btn mt-4" style="width: 100%; text-align: center; padding: 10px;">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="property-project-card depth-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/premium_apartments_1777983883090.png" alt="Yadadri Zone">
+                            <div class="project-card-overlay">
+                                <h4>Yadadri Zone</h4>
+                                <span>East Hyderabad</span>
+                            </div>
+                        </div>
+                        <div class="project-card-details">
+                            <p class="project-desc">Spiritual and tourism growth zone with rapidly developing surroundings. Ideal for future investment opportunities with premium plotted ventures.</p>
+                            <ul class="project-features">
+                                <li>✔️ Spiritual Growth Zone</li>
+                                <li>✔️ Premium Ventures</li>
+                                <li>✔️ Future Growth Potential</li>
+                            </ul>
+                            <a href="#projects" class="hero-btn mt-4" style="width: 100%; text-align: center; padding: 10px;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us-section bg-off-white py-long">
+        <div class="container">
+            <h2 class="text-center fade-in">Why Choose Us?</h2>
+            <p class="text-center subtitle fade-in">Why thousands of customers believe in Srivasuda</p>
+            <div class="why-grid fade-in" style="animation-delay: 0.2s;">
+                <div class="why-card depth-card">
+                    <div class="why-icon">🛡️</div>
+                    <h3>100% Transparent</h3>
+                    <p>Clear documentation, no hidden fees, and absolute honesty in every transaction.</p>
+                </div>
+                <div class="why-card depth-card">
+                    <div class="why-icon">📈</div>
+                    <h3>High ROI Zones</h3>
+                    <p>We meticulously select zones like Shad Nagar that guarantee massive future appreciation.</p>
+                </div>
+                <div class="why-card depth-card">
+                    <div class="why-icon">🤝</div>
+                    <h3>End-to-End Support</h3>
+                    <p>From initial inquiry to final registration, our team holds your hand through it all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects & Housing -->
+    <section id="projects" class="projects-section py-long">
+        <div class="container">
+            <h2 class="text-center fade-in">Premium Land Zones</h2>
+            <p class="text-center subtitle fade-in">Explore our highest-yield land investments</p>
+            <div class="projects fade-in" style="animation-delay: 0.2s;">
+                <div class="project-card depth-card">
+                    <img src="assets/shad_nagar_zone_1777981898455.png" alt="Shad Nagar Zone">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h3>Shad Nagar Zone</h3>
+                            <p>South Hyderabad</p>
+                            <a href="#contact" class="hero-btn">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card depth-card">
+                    <img src="assets/shad_nagar_zone_1777981898455.png" alt="Sadashivepet Zone">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h3>Sadashivepet Zone</h3>
+                            <p>West Hyderabad</p>
+                            <a href="#contact" class="hero-btn">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card depth-card">
+                    <img src="assets/shad_nagar_zone_1777981898455.png" alt="Yadadri Zone">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h3>Yadadri Zone</h3>
+                            <p>East Hyderabad</p>
+                            <a href="#contact" class="hero-btn">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center fade-in mt-6">Exclusive Housing & Villas</h2>
+            <p class="text-center subtitle fade-in">State of the art living spaces</p>
+            <div class="projects projects-housing fade-in mt-4" style="animation-delay: 0.2s;">
+                <div class="project-card depth-card">
+                    <img src="assets/premium_villas_1777983706041.png" alt="Luxury Villas">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h3>Premium Luxury Villas</h3>
+                            <p>Bespoke architecture & green living</p>
+                            <a href="#contact" class="hero-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card depth-card">
+                    <img src="assets/premium_apartments_1777983883090.png" alt="Modern Apartments">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h3>Modern High-Rise Apartments</h3>
+                            <p>Sophisticated city living</p>
+                            <a href="#contact" class="hero-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works-section bg-off-white py-long">
+        <div class="container">
+            <h2 class="text-center fade-in">How It Works</h2>
+            <div class="steps-container fade-in" style="animation-delay: 0.2s;">
+                <div class="step depth-card">
+                    <div class="step-icon">1</div>
+                    <h3>Discover Assets</h3>
+                    <p>Get access to happening sectors.</p>
+                </div>
+                <div class="step depth-card">
+                    <div class="step-icon">2</div>
+                    <h3>Invest Smartly</h3>
+                    <p>Products for every objective.</p>
+                </div>
+                <div class="step depth-card">
+                    <div class="step-icon">3</div>
+                    <h3>Start Earning</h3>
+                    <p>Secure documentation & payout.</p>
+                </div>
+                <div class="step depth-card">
+                    <div class="step-icon">4</div>
+                    <h3>Service 24/7</h3>
+                    <p>Asset managers available 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section py-long">
+        <div class="container stats-container fade-in">
+            <div class="stat-box depth-card">
+                <h2 class="counter" data-target="1500">0</h2>
+                <p>Happy Families</p>
+            </div>
+            <div class="stat-box depth-card">
+                <h2 class="counter" data-target="250">0</h2>
+                <p>Acres Developed</p>
+            </div>
+            <div class="stat-box depth-card">
+                <h2 class="counter" data-target="12">0</h2>
+                <p>Active Projects</p>
+            </div>
+            <div class="stat-box depth-card">
+                <h2 class="counter" data-target="24">0</h2>
+                <p>Support Hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="careers-section bg-off-white py-long">
+        <div class="container">
+            <h2 class="text-center fade-in">Join Our Team</h2>
+            <p class="text-center subtitle fade-in">Build a rewarding career with Srivasuda Realestate</p>
+            <div class="careers-grid fade-in" style="animation-delay: 0.2s;">
+                <div class="career-card depth-card">
+                    <h3>Customer Relationship Associate</h3>
+                    <p class="career-location mb-4">📍 Hyderabad, Telangana</p>
+                    <a href="#contact" class="contact-btn">Apply Now</a>
+                </div>
+                <div class="career-card depth-card">
+                    <h3>Customer Relationship Officer</h3>
+                    <p class="career-location mb-4">📍 Hyderabad, Telangana</p>
+                    <a href="#contact" class="contact-btn">Apply Now</a>
+                </div>
+                <div class="career-card depth-card">
+                    <h3>Field Officer</h3>
+                    <p class="career-location mb-4">📍 Hyderabad, Telangana</p>
+                    <a href="#contact" class="contact-btn">Apply Now</a>
+                </div>
+                <div class="career-card depth-card">
+                    <h3>Relationship Manager</h3>
+                    <p class="career-location mb-4">📍 Hyderabad, Telangana</p>
+                    <a href="#contact" class="contact-btn">Apply Now</a>
+                </div>
+                <div class="career-card depth-card">
+                    <h3>Business Development Manager</h3>
+                    <p class="career-location mb-4">📍 Hyderabad, Telangana</p>
+                    <a href="#contact" class="contact-btn">Apply Now</a>
+                </div>
+                <div class="career-card depth-card">
+                    <h3>Enroll For Associate</h3>
+                    <p class="career-location mb-4">📍 Flexible Location</p>
+                    <a href="#contact" class="contact-btn">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section py-long">
+        <div class="container">
+            <h2 class="text-center fade-in">What Our Investors Say</h2>
+            <div class="testimonials-grid fade-in" style="animation-delay: 0.2s;">
+                <div class="testimonial-card depth-card">
+                    <div class="quote-icon">"</div>
+                    <p>Srivasuda made my dream of owning a plot in Hyderabad a reality. The process was incredibly smooth, transparent, and completely stress-free.</p>
+                    <div class="testi-author">
+                        <h4>Rajesh Kumar</h4>
+                        <span>IT Professional</span>
+                    </div>
+                </div>
+                <div class="testimonial-card depth-card">
+                    <div class="quote-icon">"</div>
+                    <p>A highly trustworthy team. The Shad Nagar project is appreciating faster than I anticipated. Highly recommended for safe investments!</p>
+                    <div class="testi-author">
+                        <h4>Anjali Reddy</h4>
+                        <span>Business Owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-off-white py-long">
+        <div class="container">
+            <div class="contact-header text-center fade-in">
+                <h2>Get In Touch</h2>
+                <p class="subtitle">Ready to secure your future? Visit us or drop a message.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form-wrapper depth-card fade-in">
+                    <div class="contact-details mb-4">
+                        <p>📞 <strong><a href="tel:6302659769" style="color:var(--text-dark)">6302659769</a></strong></p>
+                        <p>✉️ <strong><a href="mailto:info@srivasudatruewealthindia.com" style="color:var(--text-dark)">info@srivasudatruewealthindia.com</a></strong></p>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone Number" required>
+                        <textarea placeholder="Your Message" rows="4"></textarea>
+                        <button type="submit" class="hero-btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="map-wrapper depth-card fade-in" style="animation-delay: 0.2s;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3160408544!2d78.26795908006841!3d17.412299801201905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h2>SRIVASUDA <span style="font-weight: 300;">GROUP</span></h2>
+                <p>Creating a bright future for the future generation through smart land investments.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="#hero">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#projects">Projects</a>
+                <a href="#careers">Careers</a>
+            </div>
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">IN</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Srivasuda Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Glowing WhatsApp Button -->
+    <a href="https://wa.me/916302659769" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.5c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.4l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.2-186.6 184.2zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
